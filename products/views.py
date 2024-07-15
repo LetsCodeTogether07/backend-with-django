@@ -7,6 +7,7 @@ from random import randint
 
 products: list[dict] = []
 
+
 @api_view(http_method_names=["GET"])
 def get_products(request: Request):
     return Response(data=products, status=status.HTTP_200_OK)
